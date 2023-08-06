@@ -19,10 +19,10 @@ mdb.on("error", (error) => console.error(error));
 mdb.once("open", () => console.log("Connected to Mongoose"));
 
 //resolve path for front end
-app.use(express.static(path.resolve(__dirname, "../frontend/build")));
+app.use(express.static(path.resolve(__dirname, "./frontend/build")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+  res.sendFile(path.join(__dirname, "./frontend/build", "index.html"));
 });
 
 const handleTasks = require("./routes/handleTasks");
