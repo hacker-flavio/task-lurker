@@ -1,0 +1,22 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-image: url(https://media.discordapp.net/attachments/997270158362034308/1129133035070181466/hacker_aka_flavio_spider_web_many_small_spiders_on_it_black_bac_d80dc9b8-bb96-48fc-855b-aa5882300531.png?width=1331&height=1331);
+  background-size: cover;
+  background-position: center;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+}
+.componentDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+}

@@ -1,0 +1,237 @@
+.actionsOuterDiv {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+.deleteButton {
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  padding: 0 8px;
+  margin-left: 10px;
+  border: solid #9466ab;
+  background-color: #49014a;
+}
+.custom-icon-style {
+  padding: 4px;
+  color: #913692;
+  font-size: 44px;
+}
+
+.textZero {
+  font-size: 44px;
+  margin-right: 10px;
+  width: 395px;
+}
+
+.inputFieldsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#createContainerOuterDiv {
+  display: flex;
+  border: solid 4px;
+  border-radius: 50px;
+  padding: 0px 8px 0px 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.containersOuterDiv {
+  position: relative;
+}
+.containers {
+  background-color: #000000b5;
+  border: solid #fff 4px;
+  color: #fff;
+  width: 700px;
+  padding: 20px;
+  padding-bottom: 0px;
+
+  height: 950px;
+  overflow: scroll;
+  position: relative;
+}
+
+.textInputDiv {
+  width: 100%;
+}
+
+.containerText {
+  font-size: 44px;
+  width: -webkit-fill-available;
+  margin-bottom: 30px;
+}
+.groupTextDisabled {
+  font-size: 44px;
+  width: -webkit-fill-available;
+  margin-bottom: 30px;
+  background-color: #0d0d0d;
+}
+
+.reqContainerTexts {
+  margin-left: 15px;
+}
+
+.selectedGroup {
+  border: solid blue 4px;
+  background-color: #490149;
+  margin-bottom: 5px;
+  position: relative;
+  padding: 5px;
+}
+
+.unselectedGroup {
+  border: solid white 4px;
+  margin-bottom: 5px;
+  padding: 5px;
+  position: relative;
+}
+.unselectedGroup:hover {
+  background-color: #913692;
+  border: solid yellow 4px;
+}
+
+.selectedTask {
+  border: solid blue 4px;
+  background-color: #8a038c;
+  margin-bottom: 5px;
+  position: relative;
+  padding: 5px;
+}
+
+.unselectedTask {
+  border: solid white 4px;
+  margin-bottom: 5px;
+  padding: 5px;
+  position: relative;
+}
+.unselectedTask:hover {
+  background-color: #7464b482;
+  border: solid yellow 4px;
+}
+/* start here */
+
+.selected {
+  border: solid blue 4px;
+  background-color: #4b238891;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 5px;
+}
+
+.unselected {
+  border: solid black 4px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 5px;
+}
+
+.unselected:hover {
+  background-color: #8e5cda91;
+  border: solid yellow 4px;
+}
+
+.selectBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.saveBtn {
+  background-color: #003100;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  font-size: 32px;
+  border: solid;
+  padding: 15px;
+  padding-bottom: 2.5px;
+  padding-top: 2.5px;
+  border-radius: 15px;
+  color: #81daff;
+  cursor: pointer;
+}
+
+/* end here */
+
+.textTwo {
+  color: #99f;
+  font-size: 20px;
+}
+
+.taskText {
+  margin-bottom: 5px;
+  background: linear-gradient(45deg, #000, rgba(41, 47, 143, 0.55));
+  border-bottom: solid #cd15d8;
+  border-left: solid #cd15d8;
+  padding: 5px 5px 0;
+}
+.indivTexts {
+}
+
+.task-icon {
+  border: solid 4px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #d53cbb;
+}
+.task-icon-save {
+  background-color: #27505d;
+  border: 4px solid royalblue;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.reqContainer {
+  border-bottom: solid green 4px;
+  border-left: solid green 4px;
+  color: #81daff;
+  padding: 10px;
+}
+.textThree {
+  border-bottom: solid #e33050 4px;
+  color: orange;
+  font-size: 22px;
+  margin-bottom: 5px;
+  max-width: 400px;
+  padding-bottom: 5px;
+}
+
+.shake {
+  animation: shake 0.3s infinite;
+}
+
+.shake {
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  30% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  40% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

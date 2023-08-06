@@ -1,0 +1,20 @@
+.containerState {
+  display: flex;
+}
+
+.stateIcon {
+  margin-right: 10px;
+}
+.groupContainer {
+  margin-left: 40px;
+  margin-bottom: 10px;
+  min-height: 30px;
+  padding: 10px;
+  padding-left: 0px;
+}
+.draggableContainer {
+  background-color: #2f2f2f;
+  margin-bottom: 5px;
+  width: 300px;
+  padding: 5px;
+}
