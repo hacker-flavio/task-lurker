@@ -33,10 +33,19 @@ function CreateContainer() {
     try {
       // Make a POST request to create a new task
 
-      await axios.post("/handleTasks/saveTasks", {
-        tasks: containerArray,
-        state: containerState,
-      });
+      await axios
+        .post("/handleTasks/saveTasks", {
+          tasks: containerArray,
+          state: containerState,
+        })
+        .then((res) => {
+          console.log(res.data);
+          alert("Tasks saved successfully");
+        })
+        .catch((err) => {
+          console.log(err);
+          alert("Error occured while saving tasks");
+        });
     } catch (error) {
       console.error(error);
     }
