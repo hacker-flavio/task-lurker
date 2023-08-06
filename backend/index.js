@@ -5,7 +5,7 @@ const dburl = process.env.DBURL;
 const app = express();
 const path = require("path");
 const cors = require("cors");
-const port = 5050;
+const port = process.env.PORT || 5050;
 app.use(cors());
 app.use(express.json());
 const axios = require("axios");
