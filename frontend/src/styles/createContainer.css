@@ -1,3 +1,9 @@
+#outerDiv {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .actionsOuterDiv {
   display: flex;
   align-items: center;
@@ -14,6 +20,77 @@
   border: solid 4px #9466ab;
   background-color: #49014a;
 }
+
+#outputOuterDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#editJsonDiv {
+  width: fit-content;
+  background-color: #1661a9;
+  align-items: center;
+  border: 4px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  padding: 0 8px;
+}
+#editJsonText {
+  font-size: 44px;
+  margin-right: 10px;
+  width: fit-content;
+}
+#outerOverLayDiv {
+  height: 100%;
+  position: fixed;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: #000000ba;
+  backdrop-filter: blur(8px);
+  z-index: 99;
+  display: flex;
+}
+#innerOverLayDiv {
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.custom-icon-style-small {
+  font-size: 36px !important;
+}
+
+#closeDiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  cursor: pointer;
+}
+#jsonActionButtonsOuterDiv {
+  display: flex;
+}
+.jsonActionButtons {
+  align-items: center;
+  background-color: #49014a;
+  border: 4px solid #9466ab;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+  padding: 0 8px;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
 .custom-icon-style {
   padding: 4px;
   color: #913692;
@@ -43,18 +120,29 @@
 }
 .containersOuterDiv {
   position: relative;
+  width: 50%;
+  box-sizing: border-box;
 }
-.containers {
-  background-color: #000000b5;
-  border: solid #fff 4px;
-  color: #fff;
-  width: 700px;
+.left-container {
+  width: 50%;
+  box-sizing: border-box;
+}
+.right-container-inner {
+  padding: 20px;
+}
+.left-container-inner {
   padding: 20px;
   padding-bottom: 0px;
+}
 
-  height: 850px;
+.containers {
+  background-color: #000000b5;
+  /* border: 4px solid #fff; */
+  color: #fff;
+  height: 100%;
   overflow: scroll;
   position: relative;
+  box-sizing: border-box;
 }
 
 .textInputDiv {

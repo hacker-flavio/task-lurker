@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FileTree from "./FileTree";
+import Output from "./Output";
 import "../styles/createContainer.css";
 import axios from "axios";
 
@@ -525,10 +526,11 @@ function CreateContainer() {
   };
 
   return (
-    <div style={{ marginTop: "20px", display: "flex" }}>
+    // <div style={{ marginTop: "20px", display: "flex" }} id="outerDiv">
+    <div id="outerDiv">
       <div className="containersOuterDiv">
         <div className="containers">
-          <div className="">
+          <div className="right-container-inner">
             <div className="inputFieldsContainer">
               <div className="textInputDiv">
                 <input
@@ -733,6 +735,20 @@ function CreateContainer() {
                 )}
               </div>
             </div>
+
+            <div id="outputOuterDiv">
+              <Output
+                containerArray={containerArray}
+                setContainerArray={setContainerArray}
+              />
+              {/* <div id="createContainerOuterDiv" onClick={editJSON}>
+                <div className="textZero">
+                  <div>edit json</div>
+                </div>
+                <span className="material-icons custom-icon-style-small">edit</span>
+              </div> */}
+            </div>
+
             <div>
               <FileTree
                 containerArray={containerArray}
@@ -747,8 +763,8 @@ function CreateContainer() {
           Save
         </div>
       </div>
-      <div className="containers">
-        <div>
+      <div className="containers left-container">
+        <div className="left-container-inner">
           {containerArray?.map((container, containerIndex) => (
             <div
               className={`innerContainers ${
